@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mausam | Hymanshu</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="style.css">
+     <script defer src="app.js"></script>
+</head>
+<body>
+    <!-- wrapper -->
+    <div id="wrapper" class="h-[100vh] w-[100vw] flex justify-center items-center overflow-hidden ">
+        <!-- card -->
+        <div id="card" class=" w-[400px] md:w-[500px] rounded-lg drop-shadow-2xl py-8">
+            <div class=" flex justify-center items-center py-4 px-8 rounded-full gap-x-4">
+                <input id="search" type="text" name="" id="" placeholder="Enter city name" spellcheck="false" class="h-[50px] w-[280px] outline-none px-3  rounded-2xl">
+            <button id="searchbtn" class="bg-white rounded-full h-[60px] w-[60px] flex justify-center items-center outline-none hover:scale-[1.05] transition-all 2s">
+                <img src="./assets/icons8-search-50.png" ></button>
+            </div>
+            <!-- error div -->
+            <div id="error" class=" justify-center hidden">
+                <p class="text-[30px] font-bold text-white">Invalid city/state</p>
+            </div>
+            <!-- weather -->
+            <div id="weathersection" class=" hidden  flex-col justify-center items-center gap-y-6 ">
+                <img id="weathericon" src="./assets/rain.png">
+                <h1 id="temp" class="text-[40px] font-bold">22°c</h1>
+                <h2 id="city" class="text-[40px] font-bold">New York</h2>
+                <!-- details -->
+                <div class="flex items-center w-full justify-between px-10 pl-16 ">
+                    <div class="flex flex-col">
+                          <img src="./assets/humidity.png" height="60" width="60"  class="self-center"  >
+                    <p id="humidity" class="text-[25px] self-center">50%</p>
+                    <p class="text-[30px] self-center ">Humidity</p>
+                    </div>
+
+                     <div class="flex flex-col">
+                          <img src="./assets/wind.png"  height="60" width="60" class="self-center"  >
+                    <p id="windspeed" class="text-[25px] self-center">15 km/h</p>
+                    <p class="text-[30px] self-center">Wind Speed</p>
+                    </div>            
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
